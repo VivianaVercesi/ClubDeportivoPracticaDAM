@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#041120"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imgLogotype"
+        android:src="@drawable/logo"
+        android:layout_width="176dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/txtClientName"
+        android:inputType="text"
+        android:hint="NOMBRE"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:clickable="false" />
+
+    <EditText
+        android:id="@+id/txtClientSurname"
+        android:inputType="text"
+        android:hint="APELLIDO"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:clickable="false" />
+
+    <EditText
+        android:id="@+id/txtClientDni"
+        android:inputType="number"
+        android:hint="DNI"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded"
+        android:clickable="false" />
+
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/chbMember"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/audiowide"
+            android:text="SOCIO"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/chbFit"
+            android:layout_width="127dp"
+            android:layout_height="match_parent"
+
+            android:fontFamily="@font/audiowide"
+            android:text="APTO FÍSICO"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnClientSignUp"
+        android:text="REGISTRAR"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#041120"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:includeFontPadding="true"
+        android:layout_width="260dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1.5"
+        android:backgroundTint="#6393B5"/>
+
+    <Button
+        android:id="@+id/btnBackAdm"
+        android:text="VOLVER"
+        android:fontFamily="@font/audiowide"
+        android:textColor="#041120"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:includeFontPadding="true"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#6393B5"/>
+
+</LinearLayout>
